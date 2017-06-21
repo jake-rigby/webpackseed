@@ -1,23 +1,8 @@
 
-// import jquery
-import $ from 'jquery'; 
+import ng from 'angular';
 
-// make a component factory
-function component (msg) {
+import './modules/directives.js';
 
-  let element = document.createElement('div');
-  element.id = 'my-component';
-  element.innerHTML = msg;
-  return element;
-  
-}
+ng.module('my-app', [/*'ui-router',*/'directives'])
 
-// after a moment, turn it red with a style
-setTimeout(() => {
-
-  // append a new component to the body
-  document.body.appendChild(component('Hey mutha fucker'));
-
-  $('#my-component').css('color','red');
-
-}, 1000);
+.run(() => console.log('running'))
