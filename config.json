@@ -1,0 +1,15 @@
+{
+ "server": {
+	"port": 8082,
+	"ip": "127.0.0.1",
+	"url": "http://localhost:8082",
+	"secret": "e9ec324e95214e38a039a012ffdcce8"
+ },
+ "db": {
+ 	"uri": "mongodb://127.0.0.1:27017/fp",
+ 	"note": "if using rhc port-forward -a primo, this should be 27019"
+ },
+ "TOKEN_EXPIRATION_SEC": "86400",
+ "remove_bitbucket_private": [],
+ "debug": true
+}

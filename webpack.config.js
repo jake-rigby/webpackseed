@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: "./src/index.js",
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'www'),
         filename: 'wp-test.bundle.js'
     },
     devtool: 'source-map',
