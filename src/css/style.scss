@@ -1,0 +1,15 @@
+
+@import 'palette';
+
+body {
+    background-color: $background;
+}
+
+h1 {
+    color: $color_egg;
+}
+
+img#cat {
+    width:100%;
+    height:auto;
+}
